@@ -18,19 +18,19 @@ export class AgentesComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:3000/agentes').subscribe(data => {
+    this.http.get<any[]>('https://valorant-api-qhsh.onrender.com/agentes').subscribe(data => {
       this.agentes = data;
     });
 
-    this.http.get<any[]>('http://localhost:3000/mapas').subscribe(data => {
+    this.http.get<any[]>('https://valorant-api-qhsh.onrender.com/mapas').subscribe(data => {
       this.mapas = data;
     });
 
-    this.http.get<any[]>('http://localhost:3000/armas').subscribe(data => {
+    this.http.get<any[]>('https://valorant-api-qhsh.onrender.com/armas').subscribe(data => {
       this.armas = data;
     });
 
-    this.http.get<any[]>('http://localhost:3000/rangos').subscribe(data => {
+    this.http.get<any[]>('https://valorant-api-qhsh.onrender.com/rangos').subscribe(data => {
       this.rangos = data;
     });
   }
