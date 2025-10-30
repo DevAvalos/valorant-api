@@ -1,0 +1,232 @@
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.cabecera img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.tarjeta-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  border-radius: 12px;
+  width: 70%;
+  max-width: 700px;
+  margin: 25px auto 15px auto;
+  padding: 18px 25px;
+  box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
+  border: 2px solid rgba(255, 70, 85, 0.5);
+}
+
+.tarjeta-seccion h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 70, 85, 0.6);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tarjeta-seccion:hover h2 {
+  transform: scale(1.03);
+}
+
+.titulo-agentes,
+.titulo-mapas,
+.titulo-armas,
+.titulo-rangos {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(255, 70, 85, 0.6);
+}
+
+
+.contenedor-agentes,
+.contenedor-mapas,
+.contenedor-armas,
+.contenedor-rangos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 60px;
+  background-color: #121212;
+}
+
+
+.tarjeta-agentes {
+  width: 220px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.tarjeta-mapas {
+  width: 400px; 
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.tarjeta-armas {
+  width: 350px; 
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.tarjeta-rangos {
+  width: 280px; 
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.tarjeta-agentes:hover,
+.tarjeta-mapas:hover,
+.tarjeta-armas:hover,
+.tarjeta-rangos:hover {
+  transform: scale(1.05);
+}
+
+
+.imagen-agentes {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.imagen-agentes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.imagen-mapas {
+  width: 100%;
+  height: 225px; 
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-mapas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.imagen-armas {
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-armas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.imagen-rangos {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.imagen-rangos img {
+  width: 256px;
+  height: 256px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.info {
+  padding: 15px;
+}
+
+.btn-detalle {
+  margin: 10px 0 15px 0;
+  padding: 8px 12px;
+  background-color: #ff4655;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-detalle:hover {
+  background-color: #e63946;
+}

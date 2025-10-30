@@ -1,0 +1,6 @@
+/* Quita márgenes blancos por defecto del navegador */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f1923; /* fondo oscuro tipo Valorant */
+}

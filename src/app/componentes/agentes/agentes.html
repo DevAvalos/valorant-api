@@ -1,0 +1,73 @@
+<!-- Cabecera -->
+<div class="cabecera">
+  <img src="assets/agentes/titulo.png" alt="Cabecera Valorant">
+</div>
+
+<!-- 🔹 Tarjeta para el título de sección -->
+<div class="tarjeta-seccion">
+  <h2>Valorant API</h2>
+</div>
+
+<!-- Agentes -->
+<div class="contenedor-agentes">
+  <h2 class="titulo-agentes">AGENTES</h2>
+  <div class="tarjeta-agentes" *ngFor="let agente of agentes">
+    <div class="imagen-agentes">
+      <img [src]="agente.imagen" alt="{{ agente.nombre }}">
+    </div>
+    <div class="info">
+      <h2>{{ agente.nombre }}</h2>
+      <p><strong>Rol:</strong> {{ agente.rol }}</p>
+      <p><strong>Sexo:</strong> {{ agente.sexo }}</p>
+      <p><strong>Nacionalidad:</strong> {{ agente.nacionalidad }}</p>
+    </div>
+    <button class="btn-detalle">Ver más</button>
+  </div>
+</div>
+
+
+
+<!-- Mapas -->
+<div class="contenedor-mapas">
+  <h2 class="titulo-mapas">MAPAS</h2>
+  <div class="tarjeta-mapas" *ngFor="let mapa of mapas">
+    <div class="imagen-mapas">
+      <img [src]="mapa.imagen" alt="{{ mapa.nombre }}">
+    </div>
+    <div class="info">
+      <h2>{{ mapa.nombre }}</h2>
+      <p><strong>Ubicación:</strong> {{ mapa.ubicacion }}</p>
+      <p><strong>Lanzamiento:</strong> {{ mapa.lanzamiento }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Armas -->
+<div class="contenedor-armas">
+  <h2 class="titulo-armas">ARMAS</h2>
+  <div class="tarjeta-armas" *ngFor="let arma of armas">
+    <div class="imagen-armas">
+      <img [src]="arma.imagen" alt="{{ arma.nombre }}">
+    </div>
+    <div class="info">
+      <h2>{{ arma.nombre }}</h2>
+      <p><strong>Tipo:</strong> {{ arma.tipo }}</p>
+      <p><strong>Precio:</strong> {{ arma.precio }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rangos -->
+<div class="contenedor-rangos">
+  <h2 class="titulo-rangos">RANGOS</h2>
+  <div class="tarjeta-rangos" *ngFor="let rango of rangos">
+    <div class="imagen-rangos">
+      <img [src]="rango.imagen" alt="{{ rango.nombre }}">
+    </div>
+    <div class="info">
+      <h2>{{ rango.nombre }}</h2>
+      <p><strong>Nivel:</strong> {{ rango.nivel }}</p>
+      <p>{{ rango.descripcion }}</p>
+    </div>
+  </div>
+</div>

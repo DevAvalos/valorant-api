@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AgentesComponent } from './agentes';
+
+describe('AgentesComponent', () => {
+  let component: AgentesComponent;
+  let fixture: ComponentFixture<AgentesComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AgentesComponent]
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(AgentesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
